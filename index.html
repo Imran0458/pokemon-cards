@@ -1,36 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
-    <fieldset>
-        <feBlend mode="multiply" in="SourceGraphic" in2="BackgroundImage" result="blend" />
-        <caption> student information</caption> <br><br>
+   <div class="menu-icon">
+  ☰
+</div>
+<div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon Logo">
+</div>
+<button id="toggle-theme">
+    <i class="fa-solid fa-moon"></i>
+</button>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-        <label for=" name "> Name: </label>
-        <input type="text" id="name" placeholder="Enter your name"><br><br>
-        <label for="age"> Age: </label>
-        <input type="number" id="age" placeholder="Enter your age"><br><br>
-        <label for="gender"> Gender: </label>
-        <select id="gender" name="gender">
-            <option value="male"> Male</option>
-            <option value="female"> Female</option>
-        </select>
-        <br>
-    </fieldset>
-    <br>
-    <br>
-    <fieldset>
-        <label for="city"> city</label>
-        <input type="text" id="city" placeholder="enter your city"><br><br>
-        <label for="country">country</label>
-        <input type="text" id="country" placeholder="enter your country"><br>
-        
-    </fieldset>
+<div class="top-bar">
 
+    <!-- Search Bar -->
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search for a Pokémon..." />
+    </div>
+
+    <!-- Filter Section -->
+    <div class="filter-container">
+
+        <div class="type-filter">
+            <span>Filter by types (1)</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <button class="filter-btn">
+            <i class="fa-solid fa-sliders"></i>
+        </button>
+
+    </div>
+
+</div>
+
+<div class="pokemon-container">
+
+    <!-- Card 1 -->
+    <div class="pokemon-card grass">
+        <span class="pokemon-id">#0908</span>
+
+        <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img src="https://icon2.cleanpng.com/20240229/pxe/transparent-pokemon-serious-pikachu-cartoon-character-with-folded-1710857920935.webp" alt="Angry Pikachu Pokemon">
+
+        <h2>Angry Pikachu </h2>
+
+        <div class="card-bottom">
+            <span class="type steel-type">electric</span>
+
+            <button class="arrow-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="pokemon-card steel">
+        <span class="pokemon-id">#0624</span>
+
+        <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img src="https://banner2.cleanpng.com/cb3/nxs/rws/v9oqs7nl3.webp" alt="Pawniard">
+
+        <h2>Fiery</h2>
+
+        <div class="card-bottom">
+            <span class="type steel-type">DARK / FIRE</span>
+
+            <button class="arrow-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="pokemon-card fire">
+        <span class="pokemon-id">#0229</span>
+
+        <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img src="https://icon2.cleanpng.com/lnd/20241122/wa/7d0dae3fb9bf3b2de019a3c68c034d.webp" alt="Houndoom">
+
+        <h2>Ivysaur </h2>
+
+        <div class="card-bottom">
+            <span class="type fire-type">DARK / STEEL</span>
+
+            <button class="arrow-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="pokemon-card water">
+        <span class="pokemon-id">#0686</span>
+
+        <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img src="https://thumbnail.imgbin.com/12/5/12/pokemon-classic-pikachu-cartoon-illustration-n98cpkD2_t.jpg" alt="Inkay">
+
+        <h2>ultra pikachu</h2>
+
+        <div class="card-bottom">
+            <span class="type water-type">DARK / electric </span>
+
+            <button class="arrow-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+
+<div class="bottom-section">
+
+    <div class="bottom-box">
+        <div class="icon explore">
+            <i class="fa-solid fa-compass"></i>
+        </div>
+
+        <div class="text">
+            <h3>Explore</h3>
+            <p>Discover all your favorite Pokémon</p>
+        </div>
+    </div>
+
+    <div class="bottom-box">
+        <div class="icon filter">
+            <i class="fa-solid fa-leaf"></i>
+        </div>
+
+        <div class="text">
+            <h3>Filter</h3>
+            <p>Find Pokémon by types and abilities</p>
+        </div>
+    </div>
+
+    <div class="bottom-box">
+        <div class="icon collection">
+            <i class="fa-solid fa-star"></i>
+        </div>
+
+        <div class="text">
+            <h3>Collection</h3>
+            <p>Save and manage your collection</p>
+        </div>
+    </div>
+
+    <div class="bottom-box">
+        <div class="icon stats">
+            <i class="fa-solid fa-chart-simple"></i>
+        </div>
+
+        <div class="text">
+            <h3>Stats</h3>
+            <p>View stats and learn about Pokémon</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </body>
+</html>

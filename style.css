@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-icon{
+    font-size: 30px;
+    color: #050404;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #fcfcfc;
+    box-shadow: 1px 1px 1px #eedede;
+    display: inline-block;
+    border-radius: 5px;
+}
+.logo{
+    display: inline flow-root;;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.logo img{
+    width: 260px;
+    height: auto;
+    margin-left:400px;
+    object-fit: contain;
+    margin-top: 30px;
+}
+.theme-toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#toggle-theme{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background: white;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    margin-left: 450px;
+}
+
+#toggle-theme:hover{
+    transform: scale(1.05);
+}
+/* Top Layout */
+.top-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+/* Search Bar */
+.search-box{
+    width: 420px;
+    height: 60px;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.search-box i{
+    font-size: 18px;
+    color: #7d7d7d;
+}
+
+.search-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #333;
+    background: transparent;
+}
+
+.search-box input::placeholder{
+    color: #b3b3b3;
+}
+
+/* Filter Container */
+.filter-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Type Filter */
+.type-filter{
+    width: 240px;
+    height: 60px;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.type-filter:hover{
+    transform: translateY(-2px);
+}
+
+.type-filter span{
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.type-filter i{
+    color: #555;
+    font-size: 14px;
+}
+
+/* Filter Button */
+.filter-btn{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.filter-btn:hover{
+    transform: scale(1.05);
+}
+.pokemon-container{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/* Card Design */
+.pokemon-card{
+    width: 260px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.pokemon-card:hover{
+    transform: translateY(-8px);
+}
+
+/* Bottom Border Colors */
+.grass{
+    border-bottom: 5px solid #53d86a;
+}
+
+.steel{
+    border-bottom: 5px solid #5d7187;
+}
+
+.fire{
+    border-bottom: 5px solid #ff6b4a;
+}
+
+.water{
+    border-bottom: 5px solid #6b7cff;
+}
+
+/* Pokemon ID */
+.pokemon-id{
+    color: #9da3b4;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Heart Button */
+.fav-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+
+.fav-btn i{
+    color: #7c8597;
+    font-size: 18px;
+}
+
+/* Image */
+.pokemon-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+/* Title */
+.pokemon-card h2{
+    font-size: 36px;
+    color: #13213d;
+    margin: 10px 0 20px;
+}
+
+/* Bottom Section */
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Type Badge */
+.type{
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.grass-type{
+    background: #e4f8e8;
+    color: #33a84a;
+}
+
+.steel-type{
+    background: #e7edf4;
+    color: #4d6177;
+}
+
+.fire-type{
+    background: #ffe8e2;
+    color: #ff6b4a;
+}
+
+.water-type{
+    background: #e7ebff;
+    color: #5a6cff;
+}
+
+/* Arrow Button */
+.arrow-btn{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+
+.arrow-btn i{
+    font-size: 16px;
+    color: #13213d;
+}
+
+.bottom-section{
+    width: 90%;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Each Box */
+.bottom-box{
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.bottom-box:hover{
+    background: rgba(255,255,255,0.9);
+    transform: translateY(-5px);
+}
+
+/* Icons */
+.icon{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+
+/* Icon Colors */
+.explore{
+    background: #e8ebff;
+    color: #5d6bff;
+}
+
+.filter{
+    background: #e8ffe8;
+    color: #43b85d;
+}
+
+.collection{
+    background: #fff4d9;
+    color: #f5b400;
+}
+
+.stats{
+    background: #f3e8ff;
+    color: #b056ff;
+}
+
+/* Text */
+.text h3{
+    font-size: 22px;
+    color: #13213d;
+    margin-bottom: 5px;
+}
+
+.text p{
+    font-size: 15px;
+    color: #6c7485;
+    line-height: 1.5;
+}
